@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness - My Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #005f7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #005f7f;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            margin-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Shop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search wellness">
+            <button>Search</button>
+        </div>
+        <div>
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Groceries</a>
+        <a href="#">Home & Lifestyle</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Wellness</a>
+        <a href="#">All Categories</a>
+    </nav>
+
+    <div class="main-content">
+        <section class="category">
+            <h2>Health Supplements</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="placeholder.png" alt="Multivitamin">
+                    <h3>Multivitamin Capsules</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Protein Powder">
+                    <h3>Protein Powder</h3>
+                    <p>$49.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Fish Oil">
+                    <h3>Omega-3 Fish Oil</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Personal Care</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="placeholder.png" alt="Shampoo">
+                    <h3>Herbal Shampoo</h3>
+                    <p>$14.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Skin Cream">
+                    <h3>Moisturizing Skin Cream</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Toothpaste">
+                    <h3>Natural Toothpaste</h3>
+                    <p>$4.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Shop. All Rights Reserved.</p>
+        <p><a href="#" style="color: white;">Terms & Conditions</a> | <a href="#" style="color: white;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

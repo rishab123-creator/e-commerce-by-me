@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - My Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #005f7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #005f7f;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            margin-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Shop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search fashion">
+            <button>Search</button>
+        </div>
+        <div>
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="grociries.html">Groceries</a>
+        <a href="home-lifestyle.html">Home & Lifestyle</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="allcategories.html">All Categories</a>
+    </nav>
+
+    <div class="main-content">
+        <section class="category">
+            <h2>Men's Fashion</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="placeholder.png" alt="T-Shirt">
+                    <h3>Casual T-Shirt</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Jeans">
+                    <h3>Denim Jeans</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Jacket">
+                    <h3>Leather Jacket</h3>
+                    <p>$89.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Women's Fashion</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="placeholder.png" alt="Dress">
+                    <h3>Evening Dress</h3>
+                    <p>$49.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Handbag">
+                    <h3>Stylish Handbag</h3>
+                    <p>$59.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="placeholder.png" alt="Shoes">
+                    <h3>High Heels</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Shop. All Rights Reserved.</p>
+        <p><a href="#" style="color: white;">Terms & Conditions</a> | <a href="#" style="color: white;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

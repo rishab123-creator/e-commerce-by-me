@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories - My Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: #005f7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #005f7f;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            margin-bottom: 10px;
+        }
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+            transition: transform 0.3s;
+        }
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        .category-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Shop</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search all categories">
+            <button>Search</button>
+        </div>
+        <div>
+            <a href="#">Login</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="grociries.html">Groceries</a>
+        <a href="home-lifestyle.html">Home & Lifestyle</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="allcategories.html">All Categories</a>
+    </nav>
+
+    <div class="main-content">
+        <section class="category">
+            <h2>All Categories</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="placeholder.png" alt="Groceries">
+                    <h3>Groceries</h3>
+                    <a href="grociries.html">Explore</a>
+                </div>
+                <div class="category-item">
+                    <img src="placeholder.png" alt="Home & Lifestyle">
+                    <h3>Home & Lifestyle</h3>
+                    <a href="home-lifestyle.html">Explore</a>
+                </div>
+                <div class="category-item">
+                    <img src="placeholder.png" alt="Electronics">
+                    <h3>Electronics</h3>
+                    <a href="electronics.html">Explore</a>
+                </div>
+                <div class="category-item">
+                    <img src="placeholder.png" alt="Fashion">
+                    <h3>Fashion</h3>
+                    <a href="fashion.html">Explore</a>
+                </div>
+                <div class="category-item">
+                    <img src="placeholder.png" alt="Wellness">
+                    <h3>Wellness</h3>
+                    <a href="wellness.html">Explore</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Shop. All Rights Reserved.</p>
+        <p><a href="#" style="color: white;">Terms & Conditions</a> | <a href="#" style="color: white;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
